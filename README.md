@@ -106,9 +106,9 @@ print(query_result)
 
 
 ## Output:
-![image](https://github.com/ganesha360/Ex-3--AAI/assets/120884552/b81bb4af-f608-4b67-b9e5-89bed286d7d8)
-![image](https://github.com/ganesha360/Ex-3--AAI/assets/120884552/a3f11d3b-84fc-40b4-918e-d44e47f43189)
-![image](https://github.com/ganesha360/Ex-3--AAI/assets/120884552/9d594a36-f6fb-418b-b3ed-4291abe4c002)
+
+![image](https://github.com/ganesha360/Ex-3--AAI/assets/120884552/668b53f0-cf06-4b60-b99e-25f3a803cbf0)
+
 
 
 ## Result:
