@@ -39,7 +39,7 @@ from pgmpy.models import BayesianNetwork
 from pgmpy. factors.discrete import TabularCPD 
 from pgmpy.sampling import GibbsSampling
 ```
-``python
+```python
 network = BayesianNetwork ([('Burglary', 'Alarm'),
 ('Earthquake', 'Alarm'), ('Alarm', 'JohnCalls'),
 ('Alarm', 'MaryCalls')])
