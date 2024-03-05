@@ -44,7 +44,7 @@ network = BayesianNetwork ([('Burglary', 'Alarm'),
 ('Earthquake', 'Alarm'), ('Alarm', 'JohnCalls'),
 ('Alarm', 'MaryCalls')])
 ```
-``python
+```python
 cpd_burglary = TabularCPD (variable='Burglary', variable_card=2, values=[[0.999], [0.001]]) 
 cpd_earthquake = TabularCPD (variable='Earthquake', variable_card=2, values=[[0.998], [0.002]]) 
 cpd_alarm = TabularCPD (variable='Alarm',variable_card=2,values=[[0.999, 0.71, 0.06, 0.05],
@@ -58,12 +58,12 @@ evidence=['Alarm'], evidence_card=[2])
 cpd_mary_calls = TabularCPD (variable='MaryCalls', variable_card=2,values=[[0.99, 0.3], [0.01, 0.7]],
 evidence=['Alarm'], evidence_card=[2])
 ```
-``python
+```python
 network.add_cpds (cpd_burglary, cpd_earthquake, cpd_alarm, cpd_john_calls, cpd_mary_calls)
 print("Bayesian Network Structure: ") 
 print (network)
 ```
-``python
+```python
 import networkx as nx
 G=nx.DiGraph()
 nodes =['Burglary', 'Earthquake', 'Alarm',
@@ -75,7 +75,7 @@ edges = [('Burglary', 'Alarm'), ('Earthquake',
 G.add_nodes_from (nodes)
 G.add_edges_from (edges)
 ```
-``python
+```python
 import matplotlib.pyplot as plt
 pos = {
     'Burglary': (0, 0),
@@ -85,13 +85,13 @@ pos = {
     'MaryCalls' : (2, 4)
 }
 ```
-``python
+```python
 nx.draw(G, pos, with_labels=True, node_size=1500,node_color='skyblue', font_size=10,font_weight='bold', arrowsize=20)
 import matplotlib.pyplot as plt
 plt.title("Bayesian Network: Alarm Problem")
 plt.show()
 ```
-``python
+```python
 gibbs_sampler = GibbsSampling (network)
 num_samples = 10000
 samples= gibbs_sampler.sample (size=num_samples)
